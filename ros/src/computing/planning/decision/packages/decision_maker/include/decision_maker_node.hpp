@@ -352,6 +352,8 @@ private:
   void updateWaitState(cstring_t& state_name, int status);
   void updateStopState(cstring_t& state_name, int status);
   void updateStoplineState(cstring_t& state_name, int status);
+  void updateOrderedStopState(cstring_t& state_name, int status);
+  void updateReservedStopState(cstring_t& state_name, int status);
   // exit callback
   void exitMotionEmergencyState(cstring_t& state_name, int status);
   void exitWaitState(cstring_t& state_name, int status);

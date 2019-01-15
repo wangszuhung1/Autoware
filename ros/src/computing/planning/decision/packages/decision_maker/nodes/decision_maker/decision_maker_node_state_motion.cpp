@@ -143,7 +143,7 @@ void DecisionMakerNode::entryStopState(cstring_t& state_name, int status)
 }
 void DecisionMakerNode::updateStopState(cstring_t& state_name, int status)
 {
-  publishStoplineWaypointIdx(current_status_.closest_waypoint + 1);
+  // publishStoplineWaypointIdx(current_status_.closest_waypoint + 1);
 }
 void DecisionMakerNode::exitStopState(cstring_t& state_name, int status)
 {
@@ -186,6 +186,13 @@ void DecisionMakerNode::updateStoplineState(cstring_t& state_name, int status)
                                      this, true);
     timerflag = true;
   }
+}
+
+void DecisionMakerNode::updateOrderedStopState(cstring_t& state_name, int status)
+{
+}
+void DecisionMakerNode::updateReservedStopState(cstring_t& state_name, int status)
+{
 }
 
 }
